@@ -4,7 +4,7 @@ import Container from './Container'
 export default function Header() {
 	return (
 		<header className="header">
-			<Container>
+			<Container className="header__container">
 				<div></div>
 				<h2 className="header__username">Hola Osvaldo</h2>
 				<Image

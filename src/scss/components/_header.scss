@@ -1,9 +1,11 @@
 .header {
 	width: 100%;
-	padding: 41px 36px 0px 36px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	&__container {
+		padding: 41px 36px 0px 36px;
+	}
 	&__username {
 		font-size: 1.6rem;
 		font-weight: 600;
