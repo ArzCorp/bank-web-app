@@ -1,4 +1,8 @@
 .container {
 	width: 100%;
-	font-size: $sm;
+	max-width: 375px;
+	margin: 0px auto;
+	display: inherit;
+	justify-content: inherit;
+	align-items: inherit;
 }
