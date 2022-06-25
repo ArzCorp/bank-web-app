@@ -1,7 +1,11 @@
 import Image from 'next/image'
 import Container from './Container'
 
-export default function Header() {
+interface Props {
+	children: React.ReactNode
+}
+
+export default function Header({ children }: Props) {
 	return (
 		<header className="header">
 			<Container className="header__container">
@@ -15,6 +19,7 @@ export default function Header() {
 					height={24}
 				/>
 			</Container>
+			{children}
 		</header>
 	)
 }

@@ -1,0 +1,23 @@
+.balance {
+	width: 300px;
+	position: absolute;
+	top: 79px;
+	left: calc(50% - 153px);
+	padding: 12px;
+	background-color: $white-color;
+	margin: 0px auto;
+	border-radius: 4px;
+	box-shadow: 0 1px 9px 0 rgba(56, 56, 56, 0.2);
+	&__title {
+		font-size: $sm;
+		line-height: 1.33;
+		font-weight: 600;
+		margin-bottom: 7px;
+	}
+	&__amount {
+		font-size: 3.4rem;
+		line-height: 1.18;
+		font-weight: bold;
+		color: $light-primary-color;
+	}
+}
