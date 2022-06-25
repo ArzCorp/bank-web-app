@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 import Balance from 'components/Balance'
 import Header from 'components/Header'
+import Transactions from 'components/Transactions/ulz>'
 
 const Home: NextPage = () => {
 	return (
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
 			<Header>
 				<Balance />
 			</Header>
+			<Transactions />
 		</section>
 	)
 }
