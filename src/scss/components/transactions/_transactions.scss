@@ -1,0 +1,17 @@
+.transactions {
+	position: relative;
+	z-index: 0;
+	background-color: $primary-color;
+	color: $white-color;
+	padding-top: 36px;
+	padding-bottom: 43px;
+	&__container {
+		padding-left: 53px;
+		padding-right: 61px;
+	}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
