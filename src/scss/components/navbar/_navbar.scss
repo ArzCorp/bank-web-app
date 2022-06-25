@@ -1,0 +1,28 @@
+.navbar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	&__container {
+		padding-top: 18px;
+		padding-left: 32px;
+		padding-right: 28px;
+		border-radius: 10px;
+		border: solid 0.5px rgba(9, 22, 31, 0.3);
+	}
+	&__list {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__bar {
+		width: 50%;
+		height: 5px;
+		background-color: black;
+		margin: 0px auto;
+		margin-top: 21px;
+		border-radius: 10px;
+		margin-bottom: 8px;
+	}
+}

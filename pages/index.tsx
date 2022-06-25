@@ -6,6 +6,7 @@ import Header from 'components/Header'
 import Transactions from 'components/transactions'
 import Payment from 'components/payment'
 import Movements from 'components/movements'
+import Navbar from 'components/navbar'
 
 const Home: NextPage = () => {
 	return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
 				<Payment />
 			</Transactions>
 			<Movements />
+			<Navbar />
 		</section>
 	)
 }
