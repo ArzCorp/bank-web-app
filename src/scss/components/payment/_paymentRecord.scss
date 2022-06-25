@@ -1,0 +1,23 @@
+.payment-record {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&__details {
+		display: flex;
+		gap: 10px;
+		align-items: center;
+	}
+	&__icon {
+		filter: invert(71%) sepia(53%) saturate(1602%) hue-rotate(168deg)
+			brightness(107%) contrast(87%);
+	}
+	&__name {
+		font-size: $sm;
+		line-height: 1.33;
+	}
+	&__amount {
+		@extend .payment-record__name;
+		line-height: normal;
+		font-weight: 600;
+	}
+}

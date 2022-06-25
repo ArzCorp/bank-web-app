@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Balance from 'components/Balance'
 import Header from 'components/Header'
 import Transactions from 'components/transactions'
+import Payment from 'components/payment'
 
 const Home: NextPage = () => {
 	return (
@@ -16,7 +17,9 @@ const Home: NextPage = () => {
 			<Header>
 				<Balance />
 			</Header>
-			<Transactions />
+			<Transactions>
+				<Payment />
+			</Transactions>
 		</section>
 	)
 }
