@@ -5,6 +5,7 @@ import Balance from 'components/Balance'
 import Header from 'components/Header'
 import Transactions from 'components/transactions'
 import Payment from 'components/payment'
+import Movements from 'components/movements'
 
 const Home: NextPage = () => {
 	return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
 			<Transactions>
 				<Payment />
 			</Transactions>
+			<Movements />
 		</section>
 	)
 }
