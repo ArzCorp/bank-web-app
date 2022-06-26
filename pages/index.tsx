@@ -17,7 +17,9 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<Header>
-				<Balance />
+				<div className="dashboard__balance">
+					<Balance title="SALDO DISPONIBLE" />
+				</div>
 			</Header>
 			<Transactions>
 				<Payment />

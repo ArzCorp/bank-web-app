@@ -1,8 +1,8 @@
 /*VARIABLES*/
 
-@import './variables/general';
 @import './variables/colors';
 @import './variables/fontSizes';
+@import './variables/general';
 
 /*COMPONENTS*/
 
@@ -18,3 +18,7 @@
 @import './components/movements/movement';
 @import './components/navbar/navbar';
 @import './components/navbar/navbarItem';
+
+/* PAGES */
+
+@import './pages/provision';
