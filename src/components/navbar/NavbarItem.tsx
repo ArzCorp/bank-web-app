@@ -4,15 +4,16 @@ import Link from 'next/link'
 interface Props {
 	icon: string
 	active?: boolean
+	src?: string
 }
 
-export default function NavbarItem({ icon, active }: Props) {
+export default function NavbarItem({ icon, active, src = '#' }: Props) {
 	const activeStyle: string = active ? 'navbar-item__icon--active' : ''
 
 	return (
 		<li>
 			<span>
-				<Link href="#">
+				<Link href={src}>
 					<Image
 						className={`navbar-item__icon ${activeStyle}`}
 						src={icon}

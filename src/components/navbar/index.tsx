@@ -7,7 +7,7 @@ export default function Navbar() {
 			<Container className="navbar__container">
 				<ul className="navbar__list">
 					<NavbarItem icon="/icons/home.svg" active={true} />
-					<NavbarItem icon="/icons/money.svg" />
+					<NavbarItem icon="/icons/money.svg" src="/disposicion" />
 					<NavbarItem icon="/icons/credit-card.svg" />
 					<NavbarItem icon="/icons/star.svg" />
 					<NavbarItem icon="/icons/bell.svg" />

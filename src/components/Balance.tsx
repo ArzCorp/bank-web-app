@@ -1,10 +1,14 @@
 import { getCurrencyFormat } from 'utils/currencyFormat'
 
-export default function Balance() {
+interface Props {
+	title: string
+}
+
+export default function Balance({ title }: Props) {
 	const balance: number = 1499970.0
 	return (
 		<section className="balance">
-			<h2 className="balance__title">SALDO DISPONIBLE</h2>
+			<h2 className="balance__title">{title}</h2>
 			<p className="balance__amount">{`${getCurrencyFormat(balance)}`}</p>
 		</section>
 	)
