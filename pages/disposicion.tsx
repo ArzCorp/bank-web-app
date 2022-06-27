@@ -7,9 +7,11 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { getCurrencyFormat } from 'utils/currencyFormat'
 
 const Provision: NextPage = () => {
+	const { back } = useRouter()
 	return (
 		<section className="provision">
 			<Head>
@@ -24,8 +26,9 @@ const Provision: NextPage = () => {
 						width={24}
 						height={24}
 						alt="regresar"
+						onClick={() => back()}
 					/>
-					<Link href="#">
+					<Link href="/">
 						<span className="provision__cancel">CANCELAR</span>
 					</Link>
 				</div>

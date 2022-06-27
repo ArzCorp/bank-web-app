@@ -12,12 +12,12 @@
 	background-color: transparent;
 	&__dotted {
 		position: absolute;
-		top: -17px;
-		left: -17px;
+		top: -20px;
+		left: -14px;
 		width: 205px;
 		height: 205px;
-		border: 13.5px dotted rgba(32, 161, 202, 0.14);
-		border-radius: 100%;
+		background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%2320A1C924' stroke-width='11' stroke-dasharray='6%2c 25' stroke-dashoffset='21' stroke-linecap='butt'/%3e%3c/svg%3e");
+		border-radius: 100px;
 	}
 	&__progress {
 		position: absolute;
