@@ -12,8 +12,8 @@ export default function NavbarItem({ icon, active, src = '#' }: Props) {
 
 	return (
 		<li>
-			<span>
-				<Link href={src}>
+			<Link href={src}>
+				<span>
 					<Image
 						className={`navbar-item__icon ${activeStyle}`}
 						src={icon}
@@ -21,8 +21,8 @@ export default function NavbarItem({ icon, active, src = '#' }: Props) {
 						width={25}
 						height={25}
 					/>
-				</Link>
-			</span>
+				</span>
+			</Link>
 		</li>
 	)
 }
