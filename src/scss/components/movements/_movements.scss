@@ -17,4 +17,8 @@
 		font-size: $regular;
 		line-height: 1.33;
 	}
+	&__list {
+		max-height: 300px;
+		overflow: auto;
+	}
 }

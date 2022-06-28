@@ -28,5 +28,6 @@
 	}
 	&__amount {
 		@extend .movement__name;
+		text-align: right;
 	}
 }
