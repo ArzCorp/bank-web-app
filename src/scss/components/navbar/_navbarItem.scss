@@ -1,3 +1,15 @@
+.navbar-item {
+	display: flex;
+	align-items: center;
+	gap: 3px;
+	&__name {
+		font-weight: 600;
+		display: none;
+		@media (min-width: 1024px) {
+			display: inline-block;
+		}
+	}
+}
 .navbar-item__icon--active {
 	filter: invert(51%) sepia(95%) saturate(395%) hue-rotate(148deg)
 		brightness(87%) contrast(97%);

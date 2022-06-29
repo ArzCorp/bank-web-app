@@ -5,15 +5,16 @@ interface Props {
 	icon: string
 	active?: boolean
 	src?: string
+	name: string
 }
 
-export default function NavbarItem({ icon, active, src = '#' }: Props) {
+export default function NavbarItem({ icon, active, src = '#', name }: Props) {
 	const activeStyle: string = active ? 'navbar-item__icon--active' : ''
 
 	return (
 		<li>
 			<Link href={src}>
-				<span>
+				<span className="navbar-item">
 					<Image
 						className={`navbar-item__icon ${activeStyle}`}
 						src={icon}
@@ -21,6 +22,7 @@ export default function NavbarItem({ icon, active, src = '#' }: Props) {
 						width={25}
 						height={25}
 					/>
+					<p className="navbar-item__name">{name}</p>
 				</span>
 			</Link>
 		</li>

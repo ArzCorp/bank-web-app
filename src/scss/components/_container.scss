@@ -1,5 +1,9 @@
 .container {
+	position: relative;
 	width: 100%;
 	max-width: 375px;
 	margin: 0px auto;
+	@media (min-width: 1024px) {
+		max-width: 1024px;
+	}
 }

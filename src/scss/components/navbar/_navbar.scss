@@ -3,6 +3,10 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
+	@media (min-width: 1024px) {
+		position: static;
+		min-width: 300px;
+	}
 	&__container {
 		background-color: $white-color;
 		padding-top: 18px;
@@ -12,12 +16,18 @@
 		border-bottom-left-radius: 0px;
 		border-bottom-right-radius: 0px;
 		border: solid 0.5px rgba(9, 22, 31, 0.3);
+		@media (min-width: 1024px) {
+			padding-bottom: 18px;
+		}
 	}
 	&__list {
 		list-style: none;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@media (min-width: 1024px) {
+			gap: 20px;
+		}
 	}
 	&__bar {
 		width: 50%;
@@ -27,5 +37,8 @@
 		margin-top: 21px;
 		border-radius: 10px;
 		margin-bottom: 8px;
+		@media (min-width: 1024px) {
+			display: none;
+		}
 	}
 }

@@ -8,20 +8,12 @@
 
 html {
 	font-size: 50%;
+	@media (min-width: 1024px) {
+		font-size: 75%;
+	}
 }
 
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: $dark-color;
-}
-
-.page-container {
-	padding-bottom: 91px;
-}
-
-.dashboard__balance {
-	position: absolute;
-	z-index: 10;
-	top: 75px;
-	left: calc(50% - 153px);
 }

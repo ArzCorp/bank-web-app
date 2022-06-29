@@ -4,10 +4,11 @@
 	width: 300px;
 	border-radius: 4px;
 	padding: 12px;
-	position: absolute;
 	box-shadow: 0 1px 9px 0 rgba(56, 56, 56, 0.2);
-	left: calc(50% - 150px);
-	top: 90px;
+	@media (min-width: 1024px) {
+		width: 450px;
+		padding: 30px;
+	}
 	&__title {
 		font-size: $md;
 		line-height: 1.14;

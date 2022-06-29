@@ -14,8 +14,8 @@ export default function Transactions({ children }: Props) {
 					<TransactionItem icon="/icons/tag-solid.svg" name="Pagar servicio" />
 					<TransactionItem icon="/icons/bell-solid.svg" name="Suscripción" />
 				</ul>
+				{children}
 			</Container>
-			{children}
 		</section>
 	)
 }

@@ -33,17 +33,21 @@ const Provision: NextPage = () => {
 					</Link>
 				</div>
 				<h2 className="provision__title">Disposición</h2>
+				<Balance title="Tienes disponible" />
 			</Container>
-			<Balance title="Tienes disponible" />
 			<Container className="provision__container">
 				<p className="provision__pill">Auto</p>
 				<p className="provision__pill">{getCurrencyFormat(350000.0)}</p>
-				<p className="provision__subtitle">Selecciona tu plazo</p>
-				<CircularCalculation />
-				<Button type="button" large big>
-					LO QUIERO
-				</Button>
 				<div className="navbar__bar"></div>
+			</Container>
+			<Container className="provision__months">
+				<p className="provision__subtitle">Selecciona tu plazo</p>
+				<div className="provision__circle">
+					<CircularCalculation />
+					<Button type="button" large big>
+						LO QUIERO
+					</Button>
+				</div>
 			</Container>
 		</section>
 	)
