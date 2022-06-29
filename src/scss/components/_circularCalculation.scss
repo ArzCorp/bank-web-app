@@ -10,6 +10,10 @@
 	place-content: center;
 	border: 21px solid rgba(31, 160, 202, 0.06);
 	background-color: transparent;
+	@media (min-width: 1024px) {
+		width: 313px;
+		height: 313px;
+	}
 	&__dotted {
 		position: absolute;
 		top: -20px;
@@ -18,6 +22,9 @@
 		height: 205px;
 		background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%2320A1C924' stroke-width='11' stroke-dasharray='6%2c 25' stroke-dashoffset='21' stroke-linecap='butt'/%3e%3c/svg%3e");
 		border-radius: 100px;
+		@media (min-width: 1024px) {
+			display: none;
+		}
 	}
 	&__progress {
 		position: absolute;
@@ -40,6 +47,10 @@
 		box-shadow: none;
 		height: 183px;
 		color: #222b45;
+		@media (min-width: 1024px) {
+			width: 283px;
+			height: 283px;
+		}
 	}
 	&__title {
 		font-size: $sm;
@@ -75,12 +86,20 @@
 		top: calc(50% - 40px);
 		left: -7px;
 		background-color: #783183;
+		@media (min-width: 1024px) {
+			top: calc(50% - 75px);
+			left: 5px;
+		}
 	}
 	&__end {
 		@extend .progress-dot;
 		bottom: calc(50% - 94px);
 		left: 116px;
 		background-color: #bb64c8;
+		@media (min-width: 1024px) {
+			bottom: calc(50% - 134px);
+			left: 202px;
+		}
 	}
 }
 
@@ -97,4 +116,17 @@
 	border-radius: 100%;
 	width: 213px;
 	height: 213px;
+	@media (min-width: 1024px) {
+		width: 313px;
+		height: 313px;
+		transform: rotate(270deg);
+	}
+}
+
+circle {
+	@media (min-width: 1024px) {
+		r: 143px;
+		cy: 158px;
+		cx: 153px;
+	}
 }
