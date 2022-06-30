@@ -4,12 +4,13 @@ import Movement from './Movement'
 
 export default function Movements() {
 	const { movements, loading } = useMovements()
-
 	return (
 		<section className="movements">
 			<Container>
 				<div className="movements__details">
-					<p className="movements__title">Tus movimientos</p>
+					<p className="movements__title" data-testid="movements">
+						Tus movimientos
+					</p>
 					<p className="movements__see">Ver todos</p>
 				</div>
 				{loading ? (
