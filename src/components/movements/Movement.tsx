@@ -15,7 +15,9 @@ export default function Movement(movement: movement) {
 					alt={`movimiento`}
 				/>
 				<div className="movement__info">
-					<p className="movement__name">{movement.name}</p>
+					<p data-testid={'Rick'} className="movement__name">
+						{movement.name}
+					</p>
 					<p className="movement__description">{movement.description}</p>
 				</div>
 			</span>
