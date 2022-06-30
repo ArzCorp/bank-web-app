@@ -26,3 +26,14 @@
 		}
 	}
 }
+
+.loading {
+	font-size: $sm;
+	font-weight: bold;
+	color: $primary-color;
+	height: 100%;
+	display: grid;
+	place-content: center;
+	text-align: center;
+	padding: 20px 10px;
+}

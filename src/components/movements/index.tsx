@@ -13,7 +13,7 @@ export default function Movements() {
 					<p className="movements__see">Ver todos</p>
 				</div>
 				{loading ? (
-					<p>Cargando...</p>
+					<p className="loading">Cargando...</p>
 				) : (
 					<ul className="movements__list">
 						{movements.map((movement) => (
