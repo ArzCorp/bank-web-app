@@ -28,7 +28,9 @@ export default function useMovements() {
 	const getMovements = (): Promise<movementsResponseApi> => {
 		setLoading(true)
 		return fetch('https://rickandmortyapi.com/api/character/')
-			.then((response) => response.json())
+			.then((response) => {
+				return response.json()
+			})
 			.catch((error) => setError(error.message))
 	}
 
